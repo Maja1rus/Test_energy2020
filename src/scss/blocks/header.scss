@@ -1,0 +1,39 @@
+
+.header {
+	position: relative;
+	padding-top: 24px;
+	padding-bottom: 48px;
+	grid-column: 2/3;
+	grid-row: 1/2;
+}
+
+.header__wrapper {
+	display: flex;
+}
+
+.header__nav {
+	display: flex;
+	column-gap: 40px;
+	margin-left: auto;
+	font-size: 40px;
+	line-height: 48px;
+	color: $color-gray;
+}
+
+.header__menu {
+	display: flex;
+	column-gap: 40px;
+	color: $color-gray;
+
+	li {
+		transition: 0.2s ease-in-out;
+
+		&:hover {
+			opacity: 0.8;
+		}
+	}
+}
+
+.header_languages {
+
+}
