@@ -16,28 +16,56 @@
 }
 
 .first-screen__main {
-  max-width: 726px;
 }
 
 .first-screen__subtitle {
   display: block;
-  font-size: 56px;
-  line-height: 64px;
+  max-width: 726px;
   margin-bottom: 40px;
   padding-bottom: 40px;
+  font-size: 56px;
+  line-height: 64px;
   border-bottom: 1px solid $color-gray;
 }
 
 .first-screen__discription {
   @include font($font_bold);
+  display: block;
+  max-width: 726px;
+  padding-bottom: 114px;
   font-size: 48px;
   line-height: 56px;
   letter-spacing: -0.05em;
 }
 
+.first-screen__video {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.first-screen__video-icon {
+
+
+}
+
+.first-screen__vide-text {
+}
+
+.first-screen__video-title {
+  @include font($font_bold);
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -2.4px;
+}
+
+.first-screen__video-time {
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: -2px;
+}
+
 .first-screen__socials {
   flex-direction: column;
   row-gap: 40px;
-
-
 }
