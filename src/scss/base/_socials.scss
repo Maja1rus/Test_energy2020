@@ -2,21 +2,16 @@
   display: flex;
 }
 
-
-
 .social {
 
   svg {
-
-    path {
-      fill: #CECFDB
-    }
+    transition: opacity 0.2s ease-in-out;
   }
 
   &:hover {
-      
-    path {
-      fill: red
+
+    svg {
+      opacity: 0.8;
     }
   }
 }

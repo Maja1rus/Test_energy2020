@@ -1,8 +1,9 @@
 .innovations {
-  padding-top: 176px;
+  padding-top: 172px;
+  padding-bottom: 149px;
 
   .h2 {
-    padding-bottom: 96px;
+    padding-bottom: 98px;
     text-align: center;
   }
 }
@@ -10,12 +11,24 @@
 
 .innovations__wrap {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-end;
+  justify-content: flex-start;
+  column-gap: 204px;
+  padding-left: 35px;
+  padding-bottom: 158px;
 }
 
 .innovations__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 33px;
 
+  &:first-child {
+    position: relative;
+
+    
+  }
 }
 
 .innovations_fan {
@@ -23,23 +36,35 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   max-width: 426px;
   width: 100%;
-  max-height: 426px;
+  min-height: 426px;
   height: 100%;
+  margin-bottom: 129px;
 
   &::before {
     content: '';
     position: absolute;
-    width: 426px;
-    height: 426px;
-    top: 50%;
-    left: 50%;
+    width: 408px;
+    height: 409px;
+    top: 62%;
+    left: 55%;
     transform: translate(-50%, -50%);
     background-image: url('../img/innovations-bg-1.png');
     background-repeat: no-repeat;
     background-size: contain;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 837px;
+    height: 2px;
+    top: 62%;
+    right: -190%;
+    transform: translateY(-50%);
+    background-image: url('../img/innovations-bg-2.png');
   }
 }
 
@@ -48,6 +73,11 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 264px;
+
+  img {
+    width: 100%;
+  }
 }
 
 .innovations__text {
@@ -57,3 +87,37 @@
   letter-spacing: -2.4px;
 }
 
+.innovations__swipe {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  max-width: 476px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.innovations__swipe-line {
+  height: 12px;
+  max-width: 476px;
+  width: 100%;
+  border-radius: 4px;
+  background: var(--blue-semidark, #0F1B27);
+}
+
+.innovations__swipe-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -60px;
+  
+  svg {
+    transition: opacity 0.2s ease-in-out;
+  }
+
+  &:hover {
+
+    svg {
+      opacity: 0.8;
+    }
+  }
+}

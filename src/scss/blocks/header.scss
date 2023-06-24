@@ -5,18 +5,21 @@
 	padding-bottom: 48px;
 	grid-column: 2/3;
 	grid-row: 1/2;
+	z-index: 1;
 }
 
 .header__wrapper {
 	display: flex;
+	padding-right: 44px;
 }
 
 .header__nav {
 	display: flex;
-	column-gap: 40px;
+  column-gap: 43px;
 	margin-left: auto;
 	font-size: 40px;
 	line-height: 48px;
+  letter-spacing: -2px;
 	color: $color-gray;
 }
 
@@ -29,11 +32,7 @@
 		transition: 0.2s ease-in-out;
 
 		&:hover {
-			opacity: 0.8;
+			color: $white;
 		}
 	}
-}
-
-.header_languages {
-
 }

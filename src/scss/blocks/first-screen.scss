@@ -2,6 +2,7 @@
   position: relative;
   grid-column: 2/3;
 	grid-row: 2/3;
+  z-index: 1;
 
   .h1 {
     padding-bottom: 16px;
@@ -10,21 +11,19 @@
 
 .first-screen__wrapper {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   column-gap: 40px;
-}
-
-.first-screen__main {
+  position: relative;
 }
 
 .first-screen__subtitle {
   display: block;
-  max-width: 726px;
+  max-width: 690px;
   margin-bottom: 40px;
   padding-bottom: 40px;
   font-size: 56px;
   line-height: 64px;
+  letter-spacing: -2.8px;
   border-bottom: 1px solid $color-gray;
 }
 
@@ -41,15 +40,25 @@
 .first-screen__video {
   display: flex;
   align-items: center;
+  column-gap: 24px;
   cursor: pointer;
-}
+  transition: color 0.2s ease-in;
 
-.first-screen__video-icon {
+  svg {
+    transition: opacity 0.2s ease-in;
+  }
 
+  &:hover {
+    color: $white;
 
+    svg {
+      opacity: 0.8;
+    }
+  }
 }
 
 .first-screen__vide-text {
+  margin-top: -4px;
 }
 
 .first-screen__video-title {
@@ -63,9 +72,12 @@
   font-size: 40px;
   line-height: 48px;
   letter-spacing: -2px;
+  margin-top: 10px;
 }
 
 .first-screen__socials {
   flex-direction: column;
-  row-gap: 40px;
+  row-gap: 36px;
+  padding-right: 41px;
+  padding-top: 97px;
 }

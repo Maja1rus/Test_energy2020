@@ -1,0 +1,26 @@
+.turbines {
+  padding-bottom: 180px;
+}
+
+.turbines__wrap {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 576px));
+  column-gap: 24px;
+  row-gap: 35px;
+}
+
+.turbines__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 32px;
+}
+
+.turbines__image {
+}
+
+.turbines__text {
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: -2px;
+}
