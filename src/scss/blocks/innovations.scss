@@ -26,8 +26,6 @@
 
   &:first-child {
     position: relative;
-
-    
   }
 }
 
@@ -56,16 +54,16 @@
     background-size: contain;
   }
 
-  &::after {
-    content: '';
-    position: absolute;
-    width: 837px;
-    height: 2px;
-    top: 62%;
-    right: -190%;
-    transform: translateY(-50%);
-    background-image: url('../img/innovations-bg-2.png');
-  }
+  // &::after {
+  //   content: '';
+  //   position: absolute;
+  //   width: 837px;
+  //   height: 2px;
+  //   top: 62%;
+  //   right: -190%;
+  //   transform: translateY(-50%);
+  //   background-image: url('../img/innovations-bg-2.png');
+  // }
 }
 
 .innovations_home {
@@ -119,5 +117,70 @@
     svg {
       opacity: 0.8;
     }
+  }
+}
+
+@include laptop {
+
+  .innovations {
+    padding-top: 72px;
+    padding-bottom: 145px;
+  }
+
+  .innovations__wrap {
+    column-gap: 150px;
+    padding-bottom: 120px;
+  }
+
+  .innovations_fan {
+    max-width: 270px;
+
+    &::after {
+      top: 62%;
+      right: -141%;
+    }
+
+    &::before {
+      width: 110%;
+      height: 110%;
+      top: 85%;
+      left: 49%;
+    }
+  }
+
+  .innovations__text {
+    font-size: 35px;
+    line-height: 42px;
+    letter-spacing: 0;
+  }
+
+  .innovations__swipe-line {
+    height: 9px;
+  }
+
+  .innovations__swipe-button {
+    left: -20px;
+
+    svg {
+      width: 90px;
+      height: 90px;
+    }
+  }
+}
+
+@include tablet {
+  
+  .innovations {
+
+    .h2 {
+      padding-bottom: 28px;
+    }
+  }
+
+  .innovations__wrap {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 40px;
+    padding-left: 0;
   }
 }

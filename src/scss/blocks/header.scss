@@ -36,3 +36,23 @@
 		}
 	}
 }
+
+@media screen and(max-width:1659px) {
+  
+  .header__nav {
+    column-gap: 24px;
+    font-size: 20px;
+  }
+}
+
+@include laptop {
+  
+  .header__nav {
+    line-height: 25px;
+    font-size: 25px;
+  }
+
+  .header__menu {
+    column-gap: 20px;
+  }
+}

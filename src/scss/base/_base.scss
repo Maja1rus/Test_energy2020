@@ -81,3 +81,16 @@ path {
     fill: inherit;
     stroke: inherit;
 }
+
+@include laptop {
+
+  .h1 {
+    font-size: 65px;
+    line-height: 70px;
+  }
+
+  .h2 {
+    font-size: 58px;
+    line-height: 66px;
+  }
+}

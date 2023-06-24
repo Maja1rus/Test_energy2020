@@ -16,11 +16,22 @@
   row-gap: 32px;
 }
 
-.turbines__image {
-}
-
 .turbines__text {
   font-size: 40px;
   line-height: 48px;
   letter-spacing: -2px;
+}
+
+@include laptop {
+
+  .turbines__wrap {
+    grid-template-columns: repeat(auto-fill,minmax(300px,460px));
+    justify-content: center;
+  }
+
+  .turbines__text {
+    font-size: 25px;
+    line-height: 33px;
+    letter-spacing: -1px;
+  }
 }

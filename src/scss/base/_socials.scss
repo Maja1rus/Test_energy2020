@@ -15,3 +15,14 @@
     }
   }
 }
+
+@include laptop {
+
+  .social {
+
+    svg {
+      width: 65px;
+      height: 65px;
+    }
+  }
+}

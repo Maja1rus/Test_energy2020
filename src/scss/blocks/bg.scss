@@ -35,3 +35,19 @@
   grid-template-columns: 537px auto;
   column-gap: 62px;
 }
+
+@include laptop {
+
+  .bg-top__wrapper {
+    column-gap: 30px;
+    grid-template-columns: 437px auto;
+  }
+}
+
+@include tablet {
+
+  .bg-top__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}
