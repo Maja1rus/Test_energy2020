@@ -138,3 +138,48 @@
     padding-bottom: 40px;
   }
 }
+
+@include mobile {
+
+  .first-screen {
+    position: relative;
+  }
+
+  .first-screen__wrapper {
+    column-gap: 3px;
+  }
+
+  .first-screen__subtitle {
+    font-size: 36px;
+    line-height: 46px;
+    border: none;
+    margin-bottom: 0;
+    padding-right: 50px;
+  }
+
+  .first-screen__discription {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .first-screen__video {
+    flex-direction: column;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .first-screen__video-time {
+    text-align: center;
+  }
+
+  .first-screen__video-title {
+    text-align: center;
+  }
+
+  .first-screen__socials {
+    position: absolute;
+    padding-top: 0;
+    right: 0;
+    right: 0;
+  }
+}

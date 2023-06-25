@@ -26,3 +26,14 @@
     }
   }
 }
+
+@include mobile {
+
+  .social {
+
+    svg {
+      width: 45px;
+      height: 45px;
+    }
+  }
+}
