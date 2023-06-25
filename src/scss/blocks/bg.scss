@@ -1,11 +1,10 @@
-
-
 .bg-top {
   position: relative;
   background-size: cover;
   background-image: url('../img/first_screen-bg-1.jpg');
+  background-repeat: no-repeat;
+  background-position: top;
   position: center;
-  animation: bg-сhange 25s infinite;
   min-height: 834px;
 
   &::after {
@@ -30,6 +29,17 @@
   }
 }
 
+[data-js-bg="1"] {
+  background-image: url('../img/first_screen-bg-1.jpg');
+  transition: all 0.6s ease-in-out;
+}
+
+
+[data-js-bg="2"]  {
+  transition: all 0.6s ease-in-out;
+  background-image: url('../img/first_screen-bg-2.jpg');
+}
+
 .bg-top__wrapper {
   display: grid;
   grid-template-columns: 537px auto;
@@ -37,6 +47,8 @@
 }
 
 @include laptop {
+  
+
 
   .bg-top__wrapper {
     column-gap: 30px;
@@ -49,5 +61,20 @@
   .bg-top__wrapper {
     display: flex;
     flex-direction: column;
+  }
+}
+
+@include mobile {
+
+  .bg-top {
+    background-position: left;
+  }
+
+  [data-js-bg="1"] {
+    background-image: url('../img/first_screen-bg-1.jpg');
+  }
+
+  [data-js-bg="2"] {
+    background-image: url('../img/first_screen-bg-1.jpg');
   }
 }

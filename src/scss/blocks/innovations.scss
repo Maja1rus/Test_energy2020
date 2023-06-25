@@ -10,6 +10,7 @@
 
 
 .innovations__wrap {
+  position: relative;
   display: flex;
   align-items: flex-end;
   justify-content: flex-start;
@@ -40,6 +41,8 @@
   min-height: 426px;
   height: 100%;
   margin-bottom: 129px;
+  background: $bg;
+  z-index: 1;
 
   &::before {
     content: '';
@@ -53,17 +56,6 @@
     background-repeat: no-repeat;
     background-size: contain;
   }
-
-  // &::after {
-  //   content: '';
-  //   position: absolute;
-  //   width: 837px;
-  //   height: 2px;
-  //   top: 62%;
-  //   right: -190%;
-  //   transform: translateY(-50%);
-  //   background-image: url('../img/innovations-bg-2.png');
-  // }
 }
 
 .innovations_home {
@@ -80,6 +72,7 @@
 
 .innovations__text {
   @include font($font_bold);
+  text-align: center;
   font-size: 48px;
   line-height: 56px;
   letter-spacing: -2.4px;
@@ -119,6 +112,39 @@
     }
   }
 }
+
+.innovations__line {
+  position: absolute;
+  top: 37%;
+  left: 58%;
+  transform: translate(-50%, -50%); 
+}
+
+@media screen and (max-width: 1809px) {
+  
+  .innovations__line {
+    left: 61%;
+  }
+}
+
+@media screen and (max-width: 1490px) {
+  
+  .innovations__line {
+    left: 55%;
+    top: 43%;
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 1439px) {
+  
+  .innovations__line {
+    left: 59%;
+    top: 41%;
+    width: 70%;
+  }
+}
+
 
 @include laptop {
 
@@ -166,6 +192,12 @@
       height: 90px;
     }
   }
+
+  .innovations__line {
+    left: 55%;
+    top: 43%;
+    width: 60%;
+  }
 }
 
 @include tablet {
@@ -182,5 +214,51 @@
     align-items: center;
     row-gap: 40px;
     padding-left: 0;
+  }
+
+  .innovations__line {
+    display: none;
+  }
+}
+
+@include mobile {
+
+  .innovations {
+    padding-bottom: 70px;
+  }
+
+  .innovations__wrap {
+    padding-bottom: 70px;
+  }
+
+  .innovations__item {
+
+    img {
+      max-width: 220px;
+    }
+  }
+
+  .innovations_fan {
+    min-height: auto;
+    max-width: 220px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+
+    &::before {
+      top: 49%;
+      width: 120%;
+      height: 120%;
+      top: 49%;
+      left: 57%;
+    }
+  }
+
+  .innovations__swipe-button {
+    left: -7px;
+
+    svg {
+      width: 65px;
+      height: 65px;
+    }
   }
 }

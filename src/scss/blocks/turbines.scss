@@ -24,6 +24,10 @@
 
 @include laptop {
 
+  .turbines {
+    padding-bottom: 120px;
+  }
+
   .turbines__wrap {
     grid-template-columns: repeat(auto-fill,minmax(300px,460px));
     justify-content: center;
@@ -33,5 +37,24 @@
     font-size: 25px;
     line-height: 33px;
     letter-spacing: -1px;
+  }
+
+  .turbines__text {
+    text-align: center;
+  }
+}
+
+@include tablet {
+
+  .turbines {
+    padding-bottom: 140px;
+  }
+}
+
+
+@include mobile {
+
+  .turbines {
+    padding-bottom: 80px;
   }
 }

@@ -41,9 +41,10 @@
 	display: none;
 }
 
-@media screen and(max-width:1659px) {
+@media screen and (max-width:1659px) {
   
   .header__nav {
+    letter-spacing: 0;
     column-gap: 24px;
     font-size: 20px;
   }
