@@ -708,6 +708,6 @@ path {
 
 @media screen and (max-width: 1023px) {
   body {
-    zoom: 0.65;
+    zoom: 0.5;
   }
 }
