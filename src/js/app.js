@@ -8,10 +8,3 @@ try {
 } catch (error) {
     console.log(error);
 }
-
-if (window.devicePixelRatio !== 1) {    
-    let dpt = window.devicePixelRatio;
-    let widthM = window.screen.width * dpt;
-    let widthH = window.screen.height * dpt;
-    document.write('<meta name="viewport" content="width=' + widthM+ ', height=' + widthH + '">');  
-}  

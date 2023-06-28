@@ -42,7 +42,6 @@ body {
   background-color: #000;
   color: #CECFDB;
   letter-spacing: -0.05em;
-  overflow-x: hidden;
 }
 
 main {
@@ -705,4 +704,10 @@ path {
   font-size: 40px;
   line-height: 48px;
   letter-spacing: -2px;
+}
+
+@media screen and (max-width: 1023px) {
+  body {
+    zoom: 0.65;
+  }
 }
