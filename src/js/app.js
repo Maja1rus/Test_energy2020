@@ -1,16 +1,4 @@
-import { menu } from "./modules/menu.js";
 import { changeColor } from "./modules/bg.js";
-
-// menu
-try {
-    const header = document.querySelector('.header');
-    if (header) {
-        menu(header)
-    }
-} catch (error) {
-    console.log(error);
-}
-
 
 try {
     const bg = document.querySelector('.bg-top');
@@ -20,3 +8,10 @@ try {
 } catch (error) {
     console.log(error);
 }
+
+if (window.devicePixelRatio !== 1) {    
+    let dpt = window.devicePixelRatio;
+    let widthM = window.screen.width * dpt;
+    let widthH = window.screen.height * dpt;
+    document.write('<meta name="viewport" content="width=' + widthM+ ', height=' + widthH + '">');  
+}  

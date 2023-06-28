@@ -18,7 +18,7 @@
 
 .first-screen__subtitle {
   display: block;
-  max-width: 690px;
+  width: 690px;
   margin-bottom: 40px;
   padding-bottom: 40px;
   font-size: 56px;
@@ -30,7 +30,7 @@
 .first-screen__discription {
   @include font($font_bold);
   display: block;
-  max-width: 726px;
+  width: 726px;
   padding-bottom: 114px;
   font-size: 48px;
   line-height: 56px;
@@ -82,104 +82,97 @@
   padding-top: 97px;
 }
 
-@include laptop {
+// @include laptop {
 
-  .first-screen__wrapper {
-    column-gap: 30px;
-  }
+//   .first-screen__wrapper {
+//     column-gap: 30px;
+//   }
   
-  .first-screen__subtitle {
-    margin-bottom: 30px;
-    padding-bottom: 30px;
-    font-size: 46px;
-    line-height: 52px;
-  }
+//   .first-screen__subtitle {
+//     margin-bottom: 30px;
+//     padding-bottom: 30px;
+//     font-size: 46px;
+//     line-height: 52px;
+//   }
 
-  .first-screen__discription {
-    padding-bottom: 24px;
-    font-size: 35px;
-    line-height: 40px;
-  }
+//   .first-screen__discription {
+//     padding-bottom: 24px;
+//     font-size: 35px;
+//     line-height: 40px;
+//   }
 
-  .first-screen__socials {
-    row-gap: 25px;
-    padding-right: 0;
-  }
+//   .first-screen__socials {
+//     row-gap: 25px;
+//     padding-right: 0;
+//   }
 
-  .first-screen__video-title {
-    font-size: 27px;
-    line-height: 28px;
-  }
+//   .first-screen__video-title {
+//     font-size: 27px;
+//     line-height: 28px;
+//   }
 
-  .first-screen__video-time {
-    font-size: 30px;
-    line-height: 34px;
-  }
+//   .first-screen__video-time {
+//     font-size: 30px;
+//     line-height: 34px;
+//   }
 
-  .first-screen__video-icon {
+//   .first-screen__video-icon {
     
-    svg {
-      width: 100px;
-      height: 100px;
-    }
-  }
+//     svg {
+//       width: 100px;
+//       height: 100px;
+//     }
+//   }
+// }
 
-  .first-screen__video-title {
-    
-  }
-  .first-screen__video-time {
-    
-  }
-}
+// @include tablet {
 
-@include tablet {
+//   .first-screen__wrapper {
+//     padding-bottom: 40px;
+//   }
+// }
 
-  .first-screen__wrapper {
-    padding-bottom: 40px;
-  }
-}
+// @include mobile {
 
-@include mobile {
+//   .first-screen {
+//     position: relative;
+//   }
 
-  .first-screen {
-    position: relative;
-  }
+//   .first-screen__wrapper {
+//     column-gap: 3px;
+//   }
 
-  .first-screen__wrapper {
-    column-gap: 3px;
-  }
+//   .first-screen__subtitle {
+//     font-size: 36px;
+//     line-height: 46px;
+//     border: none;
+//     margin-bottom: 0;
+//     padding-right: 50px;
+//   }
 
-  .first-screen__subtitle {
-    font-size: 36px;
-    line-height: 46px;
-    border: none;
-    margin-bottom: 0;
-    padding-right: 50px;
-  }
+//   .first-screen__discription {
+//     text-align: center;
+//     margin: 0 auto;
+//   }
 
-  .first-screen__discription {
-    text-align: center;
-    margin: 0 auto;
-  }
+//   .first-screen__video {
+//     flex-direction: column;
+//     max-width: 300px;
+//     margin: 0 auto;
+//   }
 
-  .first-screen__video {
-    flex-direction: column;
-    max-width: 300px;
-    margin: 0 auto;
-  }
+//   .first-screen__video-time {
+//     text-align: center;
+//   }
 
-  .first-screen__video-time {
-    text-align: center;
-  }
+//   .first-screen__video-title {
+//     text-align: center;
+//   }
 
-  .first-screen__video-title {
-    text-align: center;
-  }
-
-  .first-screen__socials {
-    position: absolute;
-    padding-top: 0;
-    right: 0;
-    right: 0;
-  }
-}
+//   .first-screen__socials {
+//     position: absolute;
+//     padding-top: 0;
+//     right: 0;
+//     right: 0;
+//   }
+// }

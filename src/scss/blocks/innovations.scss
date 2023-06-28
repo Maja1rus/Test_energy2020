@@ -63,7 +63,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 264px;
+  max-width: 247px;
+  width: 100%;
 
   img {
     width: 100%;
@@ -115,150 +116,150 @@
 
 .innovations__line {
   position: absolute;
-  top: 37%;
-  left: 58%;
+  top: 34%;
+  left: 59%;
   transform: translate(-50%, -50%); 
 }
 
-@media screen and (max-width: 1809px) {
+// @media screen and (max-width: 1809px) {
   
-  .innovations__line {
-    left: 61%;
-  }
-}
+//   .innovations__line {
+//     left: 61%;
+//   }
+// }
 
-@media screen and (max-width: 1490px) {
+// @media screen and (max-width: 1490px) {
   
-  .innovations__line {
-    left: 55%;
-    top: 43%;
-    width: 60%;
-  }
-}
+//   .innovations__line {
+//     left: 55%;
+//     top: 43%;
+//     width: 60%;
+//   }
+// }
 
-@media screen and (max-width: 1439px) {
+// @media screen and (max-width: 1439px) {
   
-  .innovations__line {
-    left: 59%;
-    top: 41%;
-    width: 70%;
-  }
-}
+//   .innovations__line {
+//     left: 59%;
+//     top: 41%;
+//     width: 70%;
+//   }
+// }
 
 
-@include laptop {
+// @include laptop {
 
-  .innovations {
-    padding-top: 72px;
-    padding-bottom: 145px;
-  }
+//   .innovations {
+//     padding-top: 72px;
+//     padding-bottom: 145px;
+//   }
 
-  .innovations__wrap {
-    column-gap: 150px;
-    padding-bottom: 120px;
-  }
+//   .innovations__wrap {
+//     column-gap: 150px;
+//     padding-bottom: 120px;
+//   }
 
-  .innovations_fan {
-    max-width: 270px;
+//   .innovations_fan {
+//     max-width: 270px;
 
-    &::after {
-      top: 62%;
-      right: -141%;
-    }
+//     &::after {
+//       top: 62%;
+//       right: -141%;
+//     }
 
-    &::before {
-      width: 110%;
-      height: 110%;
-      top: 85%;
-      left: 49%;
-    }
-  }
+//     &::before {
+//       width: 110%;
+//       height: 110%;
+//       top: 85%;
+//       left: 49%;
+//     }
+//   }
 
-  .innovations__text {
-    font-size: 35px;
-    line-height: 42px;
-    letter-spacing: 0;
-  }
+//   .innovations__text {
+//     font-size: 35px;
+//     line-height: 42px;
+//     letter-spacing: 0;
+//   }
 
-  .innovations__swipe-line {
-    height: 9px;
-  }
+//   .innovations__swipe-line {
+//     height: 9px;
+//   }
 
-  .innovations__swipe-button {
-    left: -20px;
+//   .innovations__swipe-button {
+//     left: -20px;
 
-    svg {
-      width: 90px;
-      height: 90px;
-    }
-  }
+//     svg {
+//       width: 90px;
+//       height: 90px;
+//     }
+//   }
 
-  .innovations__line {
-    left: 55%;
-    top: 43%;
-    width: 60%;
-  }
-}
+//   .innovations__line {
+//     left: 55%;
+//     top: 43%;
+//     width: 60%;
+//   }
+// }
 
-@include tablet {
+// @include tablet {
   
-  .innovations {
+//   .innovations {
 
-    .h2 {
-      padding-bottom: 28px;
-    }
-  }
+//     .h2 {
+//       padding-bottom: 28px;
+//     }
+//   }
 
-  .innovations__wrap {
-    flex-direction: column;
-    align-items: center;
-    row-gap: 40px;
-    padding-left: 0;
-  }
+//   .innovations__wrap {
+//     flex-direction: column;
+//     align-items: center;
+//     row-gap: 40px;
+//     padding-left: 0;
+//   }
 
-  .innovations__line {
-    display: none;
-  }
-}
+//   .innovations__line {
+//     display: none;
+//   }
+// }
 
-@include mobile {
+// @include mobile {
 
-  .innovations {
-    padding-bottom: 70px;
-  }
+//   .innovations {
+//     padding-bottom: 70px;
+//   }
 
-  .innovations__wrap {
-    padding-bottom: 70px;
-  }
+//   .innovations__wrap {
+//     padding-bottom: 70px;
+//   }
 
-  .innovations__item {
+//   .innovations__item {
 
-    img {
-      max-width: 220px;
-    }
-  }
+//     img {
+//       max-width: 220px;
+//     }
+//   }
 
-  .innovations_fan {
-    min-height: auto;
-    max-width: 220px;
-    margin-top: 50px;
-    margin-bottom: 30px;
+//   .innovations_fan {
+//     min-height: auto;
+//     max-width: 220px;
+//     margin-top: 50px;
+//     margin-bottom: 30px;
 
-    &::before {
-      top: 49%;
-      width: 120%;
-      height: 120%;
-      top: 49%;
-      left: 57%;
-    }
-  }
+//     &::before {
+//       top: 49%;
+//       width: 120%;
+//       height: 120%;
+//       top: 49%;
+//       left: 57%;
+//     }
+//   }
 
-  .innovations__swipe-button {
-    left: -7px;
+//   .innovations__swipe-button {
+//     left: -7px;
 
-    svg {
-      width: 65px;
-      height: 65px;
-    }
-  }
-}
+//     svg {
+//       width: 65px;
+//       height: 65px;
+//     }
+//   }
+// }

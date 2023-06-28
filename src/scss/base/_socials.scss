@@ -16,24 +16,24 @@
   }
 }
 
-@include laptop {
+// @include laptop {
 
-  .social {
+//   .social {
 
-    svg {
-      width: 65px;
-      height: 65px;
-    }
-  }
-}
+//     svg {
+//       width: 65px;
+//       height: 65px;
+//     }
+//   }
+// }
 
-@include mobile {
+// @include mobile {
 
-  .social {
+//   .social {
 
-    svg {
-      width: 45px;
-      height: 45px;
-    }
-  }
-}
+//     svg {
+//       width: 45px;
+//       height: 45px;
+//     }
+//   }
+// }

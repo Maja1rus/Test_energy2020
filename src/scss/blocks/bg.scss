@@ -42,39 +42,38 @@
 
 .bg-top__wrapper {
   display: grid;
-  grid-template-columns: 537px auto;
+  grid-template-columns: 539px auto;
+  align-items: start;
   column-gap: 62px;
 }
 
-@include laptop {
+// @include laptop {
   
+//   .bg-top__wrapper {
+//     column-gap: 30px;
+//     grid-template-columns: 437px auto;
+//   }
+// }
 
+// @include tablet {
 
-  .bg-top__wrapper {
-    column-gap: 30px;
-    grid-template-columns: 437px auto;
-  }
-}
+//   .bg-top__wrapper {
+//     display: flex;
+//     flex-direction: column;
+//   }
+// }
 
-@include tablet {
+// @include mobile {
 
-  .bg-top__wrapper {
-    display: flex;
-    flex-direction: column;
-  }
-}
+//   .bg-top {
+//     background-position: left;
+//   }
 
-@include mobile {
+//   [data-js-bg="1"] {
+//     background-image: url('../img/first_screen-bg-1.jpg');
+//   }
 
-  .bg-top {
-    background-position: left;
-  }
-
-  [data-js-bg="1"] {
-    background-image: url('../img/first_screen-bg-1.jpg');
-  }
-
-  [data-js-bg="2"] {
-    background-image: url('../img/first_screen-bg-1.jpg');
-  }
-}
+//   [data-js-bg="2"] {
+//     background-image: url('../img/first_screen-bg-1.jpg');
+//   }
+// }
